@@ -53,7 +53,7 @@ summary::after {
       width: 5cm;  /* Increased logo size */
       height: 5cm; /* Increased logo size */
       text-align: center;
-      transform: scale(2.5);
+      transform: scale(2.0);
 
       img {
         width: 100%;
@@ -64,36 +64,32 @@ summary::after {
     }
   }
 
-  > section {
+.front-blahblah section {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
-    padding: 0.635cm;
     max-width: 10.25cm;
     word-wrap: break-word;
-    padding-top: 58%;
-    margin-top: 0;
-    margin-left: auto;    /* Add this line to shift right */
-    margin-right: auto;    /* Add this line to control right spacing */
     font-size: 13pt;
     text-align: center;
-    
+}
 
-    h1 {
-      font-size: 32pt;
-      font-weight: 500;
-      line-height: 1.1;
-      margin-top: 0.5em;
-      margin-bottom: 0.2em;
-      color: #fff;
-      string-set: title content(text);
-    }
+.front-blahblah section h1 {
+    font-size: 32pt;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
 
-    h2 {
-      line-height: 1;
-      font-size: 10pt;
-      font-family: monospace;
-      margin-top: 0.2em;
-    }
-
+.front-blahblah section h2 {
+    line-height: 1;
+    font-size: 10pt;
+    font-family: monospace;
+    margin: 0;
+}
     > .title {
       font-size: 26pt;
       font-weight: 500;
