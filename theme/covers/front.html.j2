@@ -29,7 +29,7 @@ summary::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(112, 67, 190) !important;
+  background-color: #307fe2 !important;
 }
 
   
@@ -102,6 +102,11 @@ summary::after {
   }
 }
 
+  .no-shadow {
+    box-shadow: none !important;
+    border: none !important;
+  }
+
 h1, h2, h3 {
   string-set: chapter content();
 }
@@ -125,7 +130,7 @@ body {
 }
 </style>
 <div class="front-blahblah">
-  <img src="images/background.png">
+  <img src="images/background.png" class="no-shadow">
   <div class="logo">
     <div>
       <img src="images/logo-dark.svg" class="no-shadow">
