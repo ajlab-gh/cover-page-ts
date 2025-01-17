@@ -1,0 +1,29 @@
+site_name: Local
+theme:
+  palette:
+    primary: white
+  name: material
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - navigation.top
+
+use_directory_urls: false
+
+plugins:
+  - exporter:
+      formats:
+        pdf:
+#          stylesheets:
+#            - theme/covers/stylesheets/pdf.scss
+          covers:
+            front: theme/covers/front.html.j2
+#            back: theme/covers/back.html.j2
+          enabled: true
+          aggregator:
+            enabled: true
+            output: document.pdf
+            covers: limits
