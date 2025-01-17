@@ -1,7 +1,5 @@
 site_name: Local
 theme:
-  palette:
-    primary: white
   name: material
   features:
     - navigation.tracking
@@ -17,8 +15,8 @@ plugins:
   - exporter:
       formats:
         pdf:
-#          stylesheets:
-#            - theme/covers/stylesheets/pdf.scss
+          stylesheets:
+            - theme/covers/stylesheets/pdf.scss
           covers:
             front: theme/covers/front.html.j2
 #            back: theme/covers/back.html.j2
